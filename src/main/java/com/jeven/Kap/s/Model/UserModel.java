@@ -23,7 +23,7 @@ public class UserModel {
         return name;
     }
 
-    public String geEmail(){
+    public String getEmail(){
         return email;
     }
 
