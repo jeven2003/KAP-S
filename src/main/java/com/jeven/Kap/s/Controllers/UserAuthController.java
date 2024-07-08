@@ -21,7 +21,7 @@ import com.jeven.Kap.s.Repository.RoleRepository;
 import com.jeven.Kap.s.Repository.UserAuthRepository;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/v1/Auth")
 
 public class UserAuthController {
 
