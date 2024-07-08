@@ -25,7 +25,7 @@ public class CustomUserDetailService implements UserDetailsService{
 
 
     public UserDetails loadUserByUsername(String usernameorEmail) throws UsernameNotFoundException{
-        UserAuth userauth = userauthRepository.findByUsernameorEmail(usernameorEmail, usernameorEmail).orElseThrow(() ->
+        UserAuth userauth = userauthRepository.findByUsernameOrEmail(usernameorEmail, usernameorEmail).orElseThrow(() ->
             new UsernameNotFoundException("User not found with username or email" + usernameorEmail));
 
             Set<GrantedAuthority> authorities = userauth

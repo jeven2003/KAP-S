@@ -52,7 +52,7 @@ public class UserAuthController {
         passwordEncoder.encode(registrationRequest.getPassword())
         );
 
-        Role role = roleRepository.findByName("ROLE ADMIN").get();
+        Role role = roleRepository.findByName("ROLE_ADMIN").get();
         user.setRoles(Collections.singleton(role));
 
         userAuthRepository.save(user);
