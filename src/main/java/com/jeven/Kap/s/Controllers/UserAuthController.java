@@ -101,7 +101,7 @@ public class UserAuthController {
             return new ResponseEntity<>("User logged in successfully", HttpStatus.OK);    
         }catch(Exception e){
             System.err.println(e.toString());
-            return new ResponseEntity<>("Invalid useername or password", HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>(e.toString(), HttpStatus.UNAUTHORIZED);
         }
     }
 
